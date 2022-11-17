@@ -16,7 +16,7 @@ def register_pipelines() -> Dict[str, Pipeline]:
     data_collection = dc.create_pipeline()
     data_processing = dp.create_pipeline()
     data_analytics = da.create_pipeline()
-    return {"__default__": data_collection, data_processing, data_analytics,
+    return {"__default__": data_collection+data_processing+data_analytics,
             "data_collection": data_collection,   
             "data_processing":data_processing,
             "data_analytics":data_analytics  
