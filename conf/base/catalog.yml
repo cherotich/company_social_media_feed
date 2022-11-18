@@ -3,6 +3,7 @@
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
 
+<<<<<<< HEAD
 
 raw_data:
   type: pandas.ParquetDataSet
@@ -42,3 +43,40 @@ labelled_data:
 
 
 
+=======
+company_data:
+  type: spark.SparkDataSet
+  filepath: data/01_raw/train.csv
+  file_format: csv
+  #credentials: dev_s3
+  load_args:
+    header: True
+    inferSchema: True
+  save_args:
+    sep: '\t'
+
+model_input_data:
+  type: MemoryDataSet
+
+twitter_analytics.dummy_data:
+  type: MemoryDataSet
+
+text_comprehension.dummy_data:
+  type: MemoryDataSet
+
+text_classification.dummy_data:
+  type: MemoryDataSet
+
+
+# dummy_data:
+#   type: spark.SparkDataSet
+  # filepath: data/01_raw/osdg-dummy_data.csv
+  # file_format: csv
+  # #credentials: dev_s3
+  # load_args:
+  #   header: True
+  #   inferSchema: True
+  # save_args:
+  #   sep: '\t'
+  #   overwrite: True
+>>>>>>> 136b2c5d3f082e71849c746b59257576b6b1e43c

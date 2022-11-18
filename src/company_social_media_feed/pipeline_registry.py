@@ -1,6 +1,10 @@
 """Project pipelines."""
 from typing import Dict
 
+<<<<<<< HEAD
+=======
+from kedro.framework.project import find_pipelines
+>>>>>>> 136b2c5d3f082e71849c746b59257576b6b1e43c
 from kedro.pipeline import Pipeline
 from company_social_media_feed.pipelines import data_collection as dc
 from company_social_media_feed.pipelines import data_processing as dp

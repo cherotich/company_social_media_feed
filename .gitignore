@@ -157,3 +157,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+<<<<<<< HEAD
+=======
+
+#vs code files
+.gitconfig
+.vscode-server
+.ssh
+.gnupg
+>>>>>>> 136b2c5d3f082e71849c746b59257576b6b1e43c

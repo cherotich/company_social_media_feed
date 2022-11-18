@@ -6,6 +6,7 @@ from typing import Dict
 import numpy as np
 import pandas as pd
 from pyspark.sql import DataFrame
+<<<<<<< HEAD
 import snscrape.modules.twitter as sntwitter
 from datetime import date
 
@@ -18,3 +19,17 @@ def fetch_all_tweets():
         df = pd.DataFrame(tweets_list2, columns=['Datetime', 'Tweet_Id', 'Text', 'Username','Verified','Location','Reply_Count','Retweet_Count','Like_Count','Quote_Count','url'])
     return df
 
+=======
+
+
+def dummy_node(data: DataFrame) -> DataFrame:
+    """Dummy node to read data
+    Args:
+        data: Data containing features and target.
+    Returns:
+        data.
+    """
+
+
+    return data
+>>>>>>> 136b2c5d3f082e71849c746b59257576b6b1e43c

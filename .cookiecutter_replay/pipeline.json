@@ -1,0 +1,8 @@
+{
+  "cookiecutter": {
+    "pipeline_name": "data_processing",
+    "kedro_version": "0.18.3",
+    "_template": "/usr/local/lib/python3.9/site-packages/kedro/templates/pipeline",
+    "_output_dir": "/home/kedro/src/company_social_media_feed/pipelines"
+  }
+}

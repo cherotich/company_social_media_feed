@@ -6,6 +6,7 @@ from typing import Dict
 import numpy as np
 import pandas as pd
 from pyspark.sql import DataFrame
+<<<<<<< HEAD
 #sentiment analysis
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
@@ -61,4 +62,17 @@ def label_tweet(data:pd.DataFrame) -> pd.DataFrame:
 
 
     #data = data[['clean_text','sentiment']]
+=======
+
+
+def dummy_node(data: DataFrame) -> DataFrame:
+    """Dummy node to read data
+    Args:
+        data: Data containing features and target.
+    Returns:
+        data.
+    """
+
+
+>>>>>>> 136b2c5d3f082e71849c746b59257576b6b1e43c
     return data

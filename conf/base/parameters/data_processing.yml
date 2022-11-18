@@ -1,5 +1,12 @@
 # This is a boilerplate parameters config generated for pipeline 'data_processing'
+<<<<<<< HEAD
 # using Kedro 0.18.2.
 #
 # Documentation for this file format can be found in "Parameters"
 # Link: https://kedro.readthedocs.io/en/0.18.2/kedro_project_setup/configuration.html#parameters
+=======
+# using Kedro 0.18.3.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://kedro.readthedocs.io/en/0.18.3/kedro_project_setup/configuration.html#parameters
+>>>>>>> 136b2c5d3f082e71849c746b59257576b6b1e43c
