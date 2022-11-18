@@ -2,3 +2,43 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+
+
+raw_data:
+  type: pandas.ParquetDataSet
+  filepath: data/01_raw/raw.parquet
+  layer: raw
+  load_args:
+    engine: pyarrow
+    use_nullable_dtypes: True
+  save_args:
+    engine: pyarrow
+    compression: GZIP
+
+cleaned_data:
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/cleaned_data.parquet
+  layer: intermediate
+  load_args:
+    engine: pyarrow
+    use_nullable_dtypes: True
+  save_args:
+    engine: pyarrow
+    compression: GZIP
+
+labelled_data:
+  type: pandas.ParquetDataSet
+  filepath: data/07_model_output/model_output.parquet
+  layer: model_output
+  load_args:
+    engine: pyarrow
+    use_nullable_dtypes: True
+  save_args:
+    engine: pyarrow
+    compression: GZIP
+
+
+
+
+
+
