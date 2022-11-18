@@ -23,9 +23,6 @@ gensim
 joblib
 numexpr
 sklearn
-<<<<<<< HEAD
 scipy
 vaderSentiment
-=======
-scipy
->>>>>>> 136b2c5d3f082e71849c746b59257576b6b1e43c
+

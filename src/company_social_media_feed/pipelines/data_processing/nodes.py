@@ -2,7 +2,6 @@
 This is a boilerplate pipeline 'data_processing'
 generated using Kedro 0.18.3
 """
-<<<<<<< HEAD
 import pandas as pd
 import re
 import nltk
@@ -78,21 +77,3 @@ def preprocess_data(df)->pd.DataFrame:
     df = df.loc[:,['Datetime', 'Tweet_Id','Username','Verified','Location','Reply_Count','Retweet_Count','Like_Count','Quote_Count','url','clean_text','hashtags','POS tagged','Lemma']]
 
     return df
-=======
-from typing import Dict
-import numpy as np
-import pandas as pd
-from pyspark.sql import DataFrame
-
-
-def dummy_node(data: DataFrame) -> DataFrame:
-    """Dummy node to read data
-    Args:
-        data: Data containing features and target.
-    Returns:
-        data.
-    """
-
-
-    return data
->>>>>>> 136b2c5d3f082e71849c746b59257576b6b1e43c
