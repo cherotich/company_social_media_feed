@@ -18,7 +18,7 @@ def create_pipeline(**kwargs) -> Pipeline:
                 func=fetch_all_tweets,
                 inputs=None,
                 outputs='raw_data',
-                name= "data_collection_node",
+                name= "twitter_data_collection_node",
 
             ),
         ]

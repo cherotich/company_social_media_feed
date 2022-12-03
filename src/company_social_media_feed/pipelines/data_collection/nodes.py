@@ -3,10 +3,9 @@ This is a boilerplate pipeline 'data_collection'
 generated using Kedro 0.18.3
 """
 from typing import Dict
-import numpy as np
 import pandas as pd
-from pyspark.sql import DataFrame
 import snscrape.modules.twitter as sntwitter
+import snscrape.modules.reddit as snreddit
 from datetime import date
 
 
@@ -17,5 +16,7 @@ def fetch_all_tweets():
         tweets_list2.append([tweet.date, tweet.id, tweet.rawContent, tweet.user.username,tweet.user.verified,tweet.user.location,tweet.replyCount,tweet.retweetCount,tweet.likeCount,tweet.quoteCount,tweet.url])
         df = pd.DataFrame(tweets_list2, columns=['Datetime', 'Tweet_Id', 'Text', 'Username','Verified','Location','Reply_Count','Retweet_Count','Like_Count','Quote_Count','url'])
     return df
+
+
 
 

@@ -14,6 +14,17 @@ raw_data:
     engine: pyarrow
     compression: GZIP
 
+facebook_data:
+  type: pandas.ParquetDataSet
+  filepath: data/01_raw/facebook_raw_data.parquet
+  layer: raw
+  load_args:
+    engine: pyarrow
+    use_nullable_dtypes: True
+  save_args:
+    engine: pyarrow
+    compression: GZIP
+
 cleaned_data:
   type: pandas.ParquetDataSet
   filepath: data/02_intermediate/cleaned_data.parquet

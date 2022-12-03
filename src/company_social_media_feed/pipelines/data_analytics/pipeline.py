@@ -22,6 +22,7 @@ def create_pipeline(**kwargs) -> Pipeline:
                 name="data_analytics_node",
 
             ),
+            
         ]
     )
     data_analytics = pipeline(
