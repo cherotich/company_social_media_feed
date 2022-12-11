@@ -15,17 +15,18 @@ def create_pipeline(**kwargs) -> Pipeline:
         [
 
                 node(
-                func=fetch_all_tweets,
-                inputs=None,
-                outputs='raw_data',
-                name= "twitter_data_collection_node",
+                func = fetch_all_tweets,
+                inputs = ['params:company_name','params:start_year','params:end_year'],
+                outputs ='raw_data',
+                name = "twitter_data_collection_node",
 
             ),
         ]
     )
     data_collection = pipeline(
-        pipe=pipeline_instance,
-        inputs=None,
+        pipe = pipeline_instance,
+        inputs = None,
+        parameters = ['params:company_name','params:start_year','params:end_year'],
         namespace = "data_collection",
         outputs = "raw_data"
 

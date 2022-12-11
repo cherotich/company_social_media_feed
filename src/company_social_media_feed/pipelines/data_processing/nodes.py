@@ -40,6 +40,9 @@ def _clean_tweet(tweet):
     
     return tweet
 
+# def _split_date(date):
+
+
 def _token_stop_pos(text):
         '''
         Maps the part of speech to words in sentences giving consideration to words that are nouns, verbs, 
